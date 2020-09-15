@@ -12,7 +12,7 @@ def add_item (title,price,quantity=1)
 quantity.times do 
   @items << title 
 end 
-@previous_item = price * quantity
+@last_item = price * quantity
 end 
 
 
@@ -31,9 +31,10 @@ end
 
 def void_last_transaction
   if last_item !=0 
-    self.total = self.total- self.last_item.to_f - 1.76   
+  self.total = self.total - @last_item
   end
 end 
 
 end 
+
 
