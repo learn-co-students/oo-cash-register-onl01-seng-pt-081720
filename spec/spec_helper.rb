@@ -6,5 +6,5 @@ require_relative '../lib/cash_register'
 #
 # See http://rubydoc.info/gems/rspec-core/RSpec/Core/Configuration
 RSpec.configure do |config|
-  
+
 end
